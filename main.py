@@ -3,14 +3,21 @@ from kivy.uix.screenmanager import ScreenManager
 from kivymd.app import MDApp
 from kivy.lang import Builder
 from kivy.core.window import Window
+from kivymd.uix.screen import MDScreen
 
 Window.size = (350, 580)
+
+
+class SegScreen(MDScreen):
+    pass
+
 
 
 class MainApp(MDApp):
     def build(self):
         screen_manager = ScreenManager()
         screen_manager.add_widget(Builder.load_file("tela.kv"))
+
         return screen_manager
 
     def fechar(self):

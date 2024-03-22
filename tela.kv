@@ -11,5 +11,121 @@ MDScreen:
             right_action_items: [["close-octagon", lambda x: app.fechar()]]
             pos_hint: {"center_x": 0.5, "center_y": 0.95}
 
+        Button:
+            text: "SEGUNDA"
+            size_hint: .66, .065
+            pos_hint: {"center_x":.5, "center_y": .80}
+            background_color: 0, 0, 0, 0
+            font_name: "BPoppins"
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "segunda"
+            canvas.before:
+                Color:
+                    rgb: rgba(52, 0, 231, 255)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [5]
 
+        Button:
+            text: "TERÇA"
+            size_hint: .66, .065
+            pos_hint: {"center_x":.5, "center_y": .70}
+            background_color: 0, 0, 0, 0
+            font_name: "BPoppins"
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "login"
+            canvas.before:
+                Color:
+                    rgb: rgba(52, 0, 231, 255)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [5]
 
+        Button:
+            text: "QUARTA"
+            size_hint: .66, .065
+            pos_hint: {"center_x":.5, "center_y": .60}
+            background_color: 0, 0, 0, 0
+            font_name: "BPoppins"
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "login"
+            canvas.before:
+                Color:
+                    rgb: rgba(52, 0, 231, 255)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [5]
+
+        Button:
+            text: "QUINTA"
+            size_hint: .66, .065
+            pos_hint: {"center_x":.5, "center_y": .50}
+            background_color: 0, 0, 0, 0
+            font_name: "BPoppins"
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "login"
+            canvas.before:
+                Color:
+                    rgb: rgba(52, 0, 231, 255)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [5]
+
+        Button:
+            text: "SEXTA"
+            size_hint: .66, .065
+            pos_hint: {"center_x":.5, "center_y": .40}
+            background_color: 0, 0, 0, 0
+            font_name: "BPoppins"
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "login"
+            canvas.before:
+                Color:
+                    rgb: rgba(52, 0, 231, 255)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [5]
+
+        Button:
+            text: "SÁBADO"
+            size_hint: .66, .065
+            pos_hint: {"center_x":.5, "center_y": .30}
+            background_color: 0, 0, 0, 0
+            font_name: "BPoppins"
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "login"
+            canvas.before:
+                Color:
+                    rgb: rgba(52, 0, 231, 255)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [5]
+
+        Button:
+            text: "DOMINGO"
+            size_hint: .66, .065
+            pos_hint: {"center_x":.5, "center_y": .20}
+            background_color: 0, 0, 0, 0
+            font_name: "BPoppins"
+            on_release:
+                root.manager.transition.direction = "left"
+                root.manager.current = "login"
+            canvas.before:
+                Color:
+                    rgb: rgba(52, 0, 231, 255)
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [5]
