@@ -1,13 +1,24 @@
-<SegScreen>:
-    name: "Segunda"
+MDScreen:
+    name: "segunda"
     MDFloatLayout:
         md_bg_color: 224, 248, 244, 1
+        MDIconButton:
+            icon: "arrow-left"
+            pos_hint: {"center_y": .95}
+            user_font_size: "30sp"
+            theme_text_color: "Custom"
+            text_color: rgba(26, 24, 58, 255)
+            on_release:
+                root.manager.transition.direction = "right"
+                root.manager.current = "tela"
 
 
         Image:
             source: "icon/icon1.png"
             size_hint: None, None
             pos_hint: {"center_x":.2, "center_y":.80}
+
+
 
         Image:
             source: "icon/icon2.png"

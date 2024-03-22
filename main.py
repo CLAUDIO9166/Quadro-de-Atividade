@@ -8,7 +8,11 @@ from kivymd.uix.screen import MDScreen
 Window.size = (350, 580)
 
 
-class SegScreen(MDScreen):
+class MDExtendedFabButton:
+    pass
+
+
+class SegScreen(MDScreen, MDExtendedFabButton):
     pass
 
 
@@ -17,6 +21,9 @@ class MainApp(MDApp):
     def build(self):
         screen_manager = ScreenManager()
         screen_manager.add_widget(Builder.load_file("tela.kv"))
+        screen_manager.add_widget(Builder.load_file("segunda.kv"))
+
+
 
         return screen_manager
 
