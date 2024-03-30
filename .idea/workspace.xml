@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2105cbe5-0867-4d4a-8c89-c4587be4c9e4" name="Changes" comment="botões dia da semana">
+    <list default="true" id="2105cbe5-0867-4d4a-8c89-c4587be4c9e4" name="Changes" comment="Update workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/segunda.kv" beforeDir="false" afterPath="$PROJECT_DIR$/segunda.kv" afterDir="false" />
@@ -137,7 +137,23 @@
       <option name="project" value="LOCAL" />
       <updated>1711098969974</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Update workspace.xml">
+      <option name="closed" value="true" />
+      <created>1711758129576</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711758129577</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update workspace.xml">
+      <option name="closed" value="true" />
+      <created>1711758158216</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711758158216</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +170,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inciando projeto" />
     <MESSAGE value="botões dia da semana" />
-    <option name="LAST_COMMIT_MESSAGE" value="botões dia da semana" />
+    <MESSAGE value="Transição de tela" />
+    <MESSAGE value="Update workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update workspace.xml" />
   </component>
 </project>
