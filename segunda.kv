@@ -2,6 +2,14 @@ MDScreen:
     name: "segunda"
     MDFloatLayout:
         md_bg_color: 224, 248, 244, 1
+
+
+        MDTopAppBar:
+            title: "Elevation 4"
+            elevation: 3
+            title: "[size=17][i][color=#f3d815]SEGUNDA[/size][/i][/color]"
+            pos_hint: {"center_x": 0.5, "center_y": 0.95}
+
         MDIconButton:
             icon: "arrow-left"
             pos_hint: {"center_y": .95}
@@ -11,45 +19,252 @@ MDScreen:
             on_release:
                 root.manager.transition.direction = "right"
                 root.manager.current = "tela"
-
+# imagem 1
         Image:
             source: "icon/icon1.png"
             size_hint: None, None
             pos_hint: {"center_x":.2, "center_y":.80}
 
+        Image:
+            source: "icon/brad.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.4, "center_y":.80}
 
+        Image:
+            source: "icon/triste.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.6, "center_y":.80}
+
+
+        MDCheckbox:
+            id: checkbox1
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.5, "center_y":.80}
+            on_active: app.check1(self, self.active)
+
+        MDCheckbox:
+            id: checkbox2
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.7, "center_y":.80}
+            on_active: app.check2(self, self.active)
+
+
+# imagem 2
         Image:
             source: "icon/icon2.png"
             size_hint: None, None
             pos_hint: {"center_x":.2, "center_y":.70}
 
         Image:
+            source: "icon/brad.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.4, "center_y":.70}
+
+        Image:
+            source: "icon/triste.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.6, "center_y":.70}
+
+
+        MDCheckbox:
+            id: checkbox1
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.5, "center_y":.70}
+            on_active: app.check1(self, self.active)
+
+        MDCheckbox:
+            id: checkbox2
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.7, "center_y":.70}
+            on_active: app.check2(self, self.active)
+
+# imagem 3
+        Image:
             source: "icon/icon3.png"
             size_hint: None, None
             pos_hint: {"center_x":.2, "center_y":.60}
 
+        Image:
+            source: "icon/brad.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.4, "center_y":.60}
+
+        Image:
+            source: "icon/triste.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.6, "center_y":.60}
+
+
+        MDCheckbox:
+            id: checkbox1
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.5, "center_y":.60}
+            on_active: app.check1(self, self.active)
+
+        MDCheckbox:
+            id: checkbox2
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.7, "center_y":.60}
+            on_active: app.check2(self, self.active)
+
+
+#imagem 4
         Image:
             source: "icon/icon4.png"
             size_hint: None, None
             pos_hint: {"center_x":.2, "center_y":.50}
 
         Image:
+            source: "icon/brad.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.4, "center_y":.50}
+
+        Image:
+            source: "icon/triste.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.6, "center_y":.50}
+
+
+        MDCheckbox:
+            id: checkbox1
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.5, "center_y":.50}
+            on_active: app.check1(self, self.active)
+
+        MDCheckbox:
+            id: checkbox2
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.7, "center_y":.50}
+            on_active: app.check2(self, self.active)
+
+# imagem 5
+        Image:
             source: "icon/icon5.png"
             size_hint: None, None
             pos_hint: {"center_x":.2, "center_y":.40}
 
+        Image:
+            source: "icon/brad.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.4, "center_y":.40}
+
+        Image:
+            source: "icon/triste.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.6, "center_y":.40}
+
+
+        MDCheckbox:
+            id: checkbox1
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.5, "center_y":.40}
+            on_active: app.check1(self, self.active)
+
+        MDCheckbox:
+            id: checkbox2
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.7, "center_y":.40}
+            on_active: app.check2(self, self.active)
+
+# imagem 6
         Image:
             source: "icon/icon6.png"
             size_hint: None, None
             pos_hint: {"center_x":.2, "center_y":.30}
 
         Image:
+            source: "icon/brad.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.4, "center_y":.30}
+
+        Image:
+            source: "icon/triste.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.6, "center_y":.30}
+
+
+        MDCheckbox:
+            id: checkbox1
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.5, "center_y":.30}
+            on_active: app.check1(self, self.active)
+
+        MDCheckbox:
+            id: checkbox2
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.7, "center_y":.30}
+            on_active: app.check2(self, self.active)
+
+#imagem 7
+        Image:
             source: "icon/icon7.png"
             size_hint: None, None
             pos_hint: {"center_x":.2, "center_y":.20}
 
         Image:
+            source: "icon/brad.png"
+            size_hint: .1, .2
+            pos_hint: {"center_x":.4, "center_y":.20}
+
+        Image:
+            source: "icon/triste.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.6, "center_y":.20}
+
+
+        MDCheckbox:
+            id: checkbox1
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.5, "center_y":.20}
+            on_active: app.check1(self, self.active)
+
+        MDCheckbox:
+            id: checkbox2
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.7, "center_y":.20}
+            on_active: app.check2(self, self.active)
+
+#imagem 8
+        Image:
             source: "icon/icon8.png"
             size_hint: None, None
             pos_hint: {"center_x":.2, "center_y":.10}
 
+        Image:
+            source: "icon/brad.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.4, "center_y":.10}
+
+        Image:
+            source: "icon/triste.png"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.6, "center_y":.10}
+
+
+        MDCheckbox:
+            id: checkbox1
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.5, "center_y":.10}
+            on_active: app.check1(self, self.active)
+
+        MDCheckbox:
+            id: checkbox2
+            group: "group1"
+            size_hint: .1, .1
+            pos_hint: {"center_x":.7, "center_y":.10}
+            on_active: app.check2(self, self.active)
