@@ -12,17 +12,33 @@ class SegScreen(MDScreen):
     pass
 
 
+class Checkboxes(MDScreen):
+    pass
+
+
 class MainApp(MDApp):
+    values = []
+
     def build(self):
         screen_manager = ScreenManager()
         screen_manager.add_widget(Builder.load_file("tela.kv"))
         screen_manager.add_widget(Builder.load_file("segunda.kv"))
-
         return screen_manager
 
     def fechar(self):
         self.stop()
 
+    def on_start(self):
+        checkbox = Checkboxes
+        return checkbox
+
+    def check1(self, checkbox, active):
+        if active:
+            print("10")
+
+    def check2(self, checkbox, active):
+        if active:
+            print("0")
 
 
 if __name__ == "__main__":
