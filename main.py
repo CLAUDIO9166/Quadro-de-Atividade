@@ -39,8 +39,11 @@ class MainApp(MDApp):
     def check2(self, checkbox, active):
         if active:
             print("0")
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 925a06f53f20dcbfd82a7bee0fd893a931b74981
 
 
 if __name__ == "__main__":
