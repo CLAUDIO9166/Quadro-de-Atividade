@@ -40,6 +40,14 @@ class MainApp(MDApp):
         if active:
             print("0")
 
+    def check3(self, checkbox, active):
+        if active:
+            print("10")
+
+    def check4(self, checkbox, active):
+        if active:
+            print("0")
+
 
 
 if __name__ == "__main__":
